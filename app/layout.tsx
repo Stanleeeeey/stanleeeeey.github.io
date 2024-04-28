@@ -12,6 +12,7 @@ const inter = Montserrat({ subsets: ["latin"] });
 
 
 
+
 export default function RootLayout({
   children,
 }: Readonly<{

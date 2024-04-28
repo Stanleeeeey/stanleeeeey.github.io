@@ -10,7 +10,13 @@ export const metadata = {
     },
   }
   
-
+export async function generateStaticParams() {
+    
+    var files = fs.readdirSync(`public/posts`);
+    return files.map((element) => ({
+      slug: element.slice(0, -5)
+    }))
+}
 
 export default function Type({params}: any){
 
