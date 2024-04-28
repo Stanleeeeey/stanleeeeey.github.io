@@ -27,7 +27,7 @@ export default function Home() {
     var files = fs.readdirSync(`public/posts`);
 
   return (
-    <main className={styles.main}>
+    <main className={styles.main} >
      <section className={styles.landingPage} id ="landing-page">
         <div className={styles.greetingWrap}>
             <h2 id = "greeting" >{greeting}</h2>

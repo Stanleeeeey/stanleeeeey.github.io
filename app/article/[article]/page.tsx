@@ -13,12 +13,15 @@ export const metadata = {
 export async function generateStaticParams() {
     
     var files = fs.readdirSync(`public/posts`);
-    return files.map((element) => ({
-      slug: element.slice(0, -5)
-    }))
+    return files.map((element) => {
+        console.log(element.slice(0, -5));
+        return ({
+      article: element.slice(0, -5)
+    })})
+    
 }
 
-export default function Type({params}: any){
+export default function Page({params}: any){
 
     const file = JSON.parse(fs.readFileSync(`public/posts/${params.article}.json`, 'utf-8'));
  
