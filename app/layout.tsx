@@ -4,6 +4,7 @@ import React, { useState, useEffect } from "react";
 import { Montserrat } from "next/font/google";
 import styles from "./layout.module.css";
 import "./global.css";
+import Script from 'next/script'
 
 import 'bootstrap-icons/font/bootstrap-icons.css'
 
@@ -26,7 +27,7 @@ export default function RootLayout({
     <html lang="en">
       <head>
         
-        <script type="text/javascript" src="../js/main.js"></script>
+        <Script src="../js/main.js"></Script>
         <link rel="stylesheet" href="../css/themes.css" />
         <link rel="stylesheet" href="../css/global.css" />
 

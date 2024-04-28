@@ -25,7 +25,7 @@ export default function Type({params}: any){
 
             
                 {file['text'].map((element: string ) => {
-                    return (<p className={styles.paragraph} >&emsp; {element}</p>)
+                    return (<p key = {element} className={styles.paragraph} >&emsp; {element}</p>)
                 })}
             </div>
             <div className={styles.footer}>

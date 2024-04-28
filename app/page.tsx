@@ -91,7 +91,7 @@ export default function Home() {
             {files.map(element => {
                 const file = JSON.parse(fs.readFileSync(`public/posts/${element}`, 'utf-8'));
                 return (
-                <div className={styles.postWrap} id = "blog">
+                <div key = {element} className={styles.postWrap} id = "blog">
                     
                     <a href = {`/article/${element.slice(0, -5)}`} className={styles.post}>
                         <div className={styles.postInfo}>
