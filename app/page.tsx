@@ -6,7 +6,15 @@ import fs from 'fs';
 
 export const metadata = {
     title:"Stanleeeeey portfolio",
-    description:"Website by Stanisław Kawulok",
+    description:"Portfolio by Stanisław Kawulok.  ",
+    keywords:['Stanisław', "Kawulok", "Portfolio", "Stanleeeeey", "Stanislaw"],
+    authors:[{name:"Stanisław Kawulok"}],
+    creator:"Stanisław Kawulok",
+    siteName:"Stanleeeeey portfolio",
+    robots:{
+        index:true,
+        follow:true,
+    },
     icons: {
       icon: '/icon.png', // /public path
     },
