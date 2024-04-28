@@ -1,0 +1,12 @@
+{
+    "title": "Hello!",
+    "subtitle": "My first blog post",
+    "text":[
+        "This is my first post on the Blog if you want to see all of them go <a href = '/main.html#blog'>here</a>. I have no experience with writing, and english is not my native language, so sorry in advance for all ireadable posts here. Anyway what will be posted here? No idea, Whenever I find something interesting to share I will. It may differ from some codign stuff, to my opinions about movies or series.",
+        "Perhaps I should introduce myself. I'm a highschool student (as of march 2024) at Akademickie Liceum Ogólnokształcące Politechniki Wrocławskiej (Alo Pwr). And I take extended classes of math, physics and IT. In my free time I like to code, play board games, listen to good music, and read. Over the years I managed to become laureate of Zdolny Ślązak, and finalist of OMJ (Junior math olympics). ",
+        "That seems to be it, till next post ."
+    ],
+    "author":"Stanisław Kawulok",
+    "date": "14.04.2024"
+    
+}

@@ -1,0 +1,85 @@
+:root{
+    scroll-behavior: smooth;
+    padding:0;
+    margin:0;
+
+    
+  --transition-in: .3s;
+  --transition-out: .2s;
+
+  --external-padding:30px ;
+
+  
+    font-family: 'Montserrat', sans-serif;
+
+    
+  font-weight: 300;
+  }
+
+  *{
+    font-weight: 300;
+    padding: 0;
+    margin: 0;
+  }
+  
+
+  body::-webkit-scrollbar {
+    display: none;
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+  }
+  
+  
+  body{
+    background: var(--background-color);
+    scroll-behavior: smooth;
+    padding:0;
+    margin:0;
+  }
+  section{
+    width:100vw;
+    overflow-x: hidden;
+    height: 100vh;
+    padding: var(--external-padding);
+    padding-left: calc(var(--external-padding) + 1rem);
+    padding-right: calc(var(--external-padding) + 1rem);
+    box-sizing: border-box;
+    overflow: hidden;
+    
+  }
+  
+  canvas{
+
+    opacity: 1;
+    position: fixed;
+    top:0px;
+    left:0px;
+    z-index:-1;
+  
+  
+  }
+  
+  a{
+    color: var(--primary-text-color)
+  }
+
+  .title{
+    width: fit-content;
+  
+    font-size: 300%;;
+  
+    height: min-content;
+    opacity: 100%;
+    font-weight: 300;
+  
+    color:var(--primary-text-color);
+    transition: var(--transition-out);
+  }
+  
+  
+  .title:hover{
+    transform: translate(10px, 0px);
+    text-shadow: -1px 0px 0px var(--secondary-text-color);
+    transition: var(--transition-in);
+  }
+  
