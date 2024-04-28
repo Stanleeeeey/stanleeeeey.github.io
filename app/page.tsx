@@ -5,7 +5,7 @@ import styles from "./page.module.css";
 import fs from 'fs';
 
 export const metadata = {
-    title:"Stanisławs portfolio",
+    title:"Stanleeeeey portfolio",
     description:"Website by Stanisław Kawulok",
     icons: {
       icon: '/icon.png', // /public path
