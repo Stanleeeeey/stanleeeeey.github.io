@@ -171,3 +171,6 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
 
+setup_main()
+document.getElementById("retro").addEventListener("click", () => {RetroMode()})
+document.getElementById("dark").addEventListener("click", () => {DarkMode()})
