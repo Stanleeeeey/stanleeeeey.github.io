@@ -53,11 +53,11 @@ export default function Home() {
         <h1 className = {styles.title}>My projects</h1>
         
         <div className={styles.projectsWrap}>
-            <a  href = 'https://alotech-cansat.github.io/alotech-website/' className={`${styles.project} ${styles.left}`}>
+            <a  href = 'https://github.com/Alotech-cansat/cansat' className={`${styles.project} ${styles.left}`}>
 
                 <div className={styles.topWrap}>
                     <h1>Alotech cansat</h1>
-                    <p>code for  project </p>
+                    <p>code for the alotech cansat project prepared for the ESA cansat competition </p>
                 </div>
                 <div className={styles.techsWrap}>
                     <p>arduino</p>
