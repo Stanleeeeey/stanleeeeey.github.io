@@ -3,6 +3,9 @@
 
 import styles from "./page.module.css";
 import fs from 'fs';
+import matter from 'gray-matter';
+import Script from 'next/script'
+
 
 export const metadata = {
     title:"Stanleeeeey portfolio",
@@ -24,6 +27,17 @@ export const metadata = {
 
 export default function Home() {
 
+    files = fs.readdirSync('public/posts');
+    const posts = files.map((fileName) => {
+        const slug = fileName.replace('.md', '');
+        const readFile = fs.readFileSync(`public/posts/${fileName}`, 'utf-8');
+        const { data: frontmatter } = matter(readFile);
+        
+        return {
+          slug,
+          frontmatter,
+        };
+    });
 
     const now = new Date();
     const hours = now.getHours();
@@ -36,6 +50,7 @@ export default function Home() {
 
   return (
     <main className={styles.main} >
+        <Script src="../js/main.js"></Script>
      <section className={styles.landingPage} id ="landing-page">
         <div className={styles.greetingWrap}>
             <h2 id = "greeting" >{greeting}</h2>
@@ -96,17 +111,17 @@ export default function Home() {
     <section className={styles.blogSection}>
         <h1 className={styles.title}>Blog</h1>
         <div className={styles.blogWrap}>
-            {files.map(element => {
-                const file = JSON.parse(fs.readFileSync(`public/posts/${element}`, 'utf-8'));
+            {posts.map(({ slug, frontmatter }) => {
+                console.log(slug)
                 return (
-                <div key = {element} className={styles.postWrap} id = "blog">
+                <div key = {slug} className={styles.postWrap} id = "blog">
                     
-                    <a href = {`/article/${element.slice(0, -5)}`} className={styles.post}>
+                    <a href = {`/article/${slug}`} className={styles.post}>
                         <div className={styles.postInfo}>
-                            <h3>{file['title']}</h3>
-                            <p>{file['date']}</p>
+                            <h3>{frontmatter.title}</h3>
+                            <p>{frontmatter.date}</p>
                         </div>
-                        <p>{file['subtitle']}</p>
+                        <p>{frontmatter.subtitle}</p>
                     </a>
 
             

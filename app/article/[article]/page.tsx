@@ -1,4 +1,7 @@
 import fs from 'fs';
+import md from 'markdown-it';
+import matter from 'gray-matter';
+
 
 import styles from "./page.module.css";
 
@@ -21,6 +24,26 @@ export async function generateStaticParams() {
     
 }
 
+export default function Page({params}: any){
+    const file = fs.readFileSync(`public/posts/${params.article}.md`);
+
+    let { data: frontmatter, content }  = matter(file)
+  return (
+
+    <section className={styles.articleWrap}>
+
+      
+      <div className = {styles.article} dangerouslySetInnerHTML={{ __html: md().render(content).split(".$").join('<MathJax>\\(').split("$.").join('\\)</MathJax>') }} />
+    
+      <div className={styles.footer}>
+        <p className={styles.author}>{frontmatter.author}</p>
+        <p className={styles.date}>{frontmatter.date}</p>
+      </div>
+    </section>
+  );
+}
+
+/*
 export default function Page({params}: any){
 
     const file = JSON.parse(fs.readFileSync(`public/posts/${params.article}.json`, 'utf-8'));
@@ -49,4 +72,4 @@ export default function Page({params}: any){
 
       </section>
     )
-}
+}*/

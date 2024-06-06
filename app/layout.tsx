@@ -4,7 +4,7 @@ import React, { useState, useEffect } from "react";
 import { Montserrat } from "next/font/google";
 import styles from "./layout.module.css";
 import "./global.css";
-import Script from 'next/script'
+
 
 import 'bootstrap-icons/font/bootstrap-icons.css'
 
@@ -28,7 +28,7 @@ export default function RootLayout({
     <html lang="en">
       <head>
         <meta name="google-site-verification" content="e5_KYLbv42cc-4a1VFCMpjgUqkOG3sXKm1jNK-IPZww" />
-        <Script src="../js/main.js"></Script>
+        
         <link rel="stylesheet" href="../css/themes.css" />
         <link rel="stylesheet" href="../css/global.css" />
 
