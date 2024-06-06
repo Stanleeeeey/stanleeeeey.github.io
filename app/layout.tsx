@@ -54,6 +54,9 @@ export default function RootLayout({
                 <a href="mailto:dskybus@gmail.com">
                   <i className={`bi bi-envelope ${styles.linkIcon}`}></i>
                 </a>
+                <a href="https://www.linkedin.com/in/stanis%C5%82aw-kawulok-176466308/">
+                  <i className={`bi bi-linkedin ${styles.linkIcon}`}></i>
+                </a>
             </div>
             <p>Stanisław Kawulok 2024</p>
             
