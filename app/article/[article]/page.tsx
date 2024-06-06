@@ -16,10 +16,13 @@ export const metadata = {
 export async function generateStaticParams() {
     
     var files = fs.readdirSync(`public/posts`);
+
+    
     return files.map((element) => {
-        console.log(element.slice(0, -5));
+        
+        console.log(element.slice(0, -3));
         return ({
-      article: element.slice(0, -5)
+      article: element.slice(0, -3)
     })})
     
 }
