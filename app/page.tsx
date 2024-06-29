@@ -117,7 +117,7 @@ export default function Home() {
                 return (
                 
                     
-                    <a href = {`/article/${slug}`} className={styles.post}>
+                    <a key = {slug} href = {`/article/${slug}`} className={styles.post}>
                         <div className={styles.postInfo}>
                             <h3>{frontmatter.title}</h3>
                             <p>{frontmatter.date}</p>
