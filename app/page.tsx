@@ -111,10 +111,11 @@ export default function Home() {
     <section className={styles.blogSection}>
         <h1 className={styles.title}>Blog</h1>
         <div className={styles.blogWrap}>
+            <div  className={styles.postWrap} id = "blog">
             {posts.map(({ slug, frontmatter }) => {
-                console.log(slug)
+                
                 return (
-                <div key = {slug} className={styles.postWrap} id = "blog">
+                
                     
                     <a href = {`/article/${slug}`} className={styles.post}>
                         <div className={styles.postInfo}>
@@ -125,9 +126,11 @@ export default function Home() {
                     </a>
 
             
-                </div>
+                
                 )
-        })}
+                
+            })}
+            </div>
         </div>
 
     </section>
