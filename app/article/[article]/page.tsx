@@ -34,14 +34,21 @@ export default function Page({params}: any){
   return (
 
     <section className={styles.articleWrap}>
-
-      
-      <div className = {styles.article} dangerouslySetInnerHTML={{ __html: md().render(content).split(".$").join('<MathJax>\\(').split("$.").join('\\)</MathJax>') }} />
+      <div className={styles.articleTitle}>{frontmatter.title}
     
+      </div>
+
+
+
+      <div className = {styles.article} dangerouslySetInnerHTML={{ __html: md().render(content).split(".$").join('<MathJax>\\(').split("$.").join('\\)</MathJax>') }} />
+      
+
       <div className={styles.footer}>
         <p className={styles.author}>{frontmatter.author}</p>
         <p className={styles.date}>{frontmatter.date}</p>
       </div>
+      
+      
     </section>
   );
 }

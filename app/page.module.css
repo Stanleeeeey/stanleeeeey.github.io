@@ -253,7 +253,7 @@
   overflow: scroll;
   
   width:50vw;
-  min-width: 250px;
+  min-width: 150px;
   padding: 1rem;
   display: flex;
   justify-content: start;
@@ -278,7 +278,7 @@
   display: flex;
   flex-direction: column;   
   gap:.5rem; 
-  width: max(calc(50vw - 1rem - 0px), calc(250px - 1rem - 0px));
+  width: max(calc(50vw - 1rem - 0px), calc(150px - 1rem - 0px));
   border: 1px solid var(--border-color);
   transition: var(--transition-out);
   background-color: var(--background-color);
@@ -292,7 +292,7 @@
 
 
 .post:hover{
-  width: max(calc(50vw - 1rem - 10px), calc(250px - 1rem - 10px));
+  width: max(calc(50vw - 1rem - 10px), calc(150px - 1rem - 10px));
   box-shadow: -10px 0px 0px var(--shadow-color);
   transform: translate(10px, 0px);
 

@@ -4,6 +4,8 @@
     justify-content: start;
     overflow: scroll;
     align-items: center;
+    gap:1rem;
+
 
 }
 
@@ -11,7 +13,18 @@
     display: none;
 }
 
+.articleTitle{
+    text-align: left;
+    display: flex;
+    width:70%;
+    min-width: 175px;
+    font-size: 300%;
+}
+
+
+
 .article{
+    
     box-sizing: border-box;
     width: 70%;
     min-width: 175px;
@@ -20,43 +33,26 @@
     gap:1rem;
 }
 
-.articleText{
-    padding-left: 1rem;
-    display: flex;
 
+.article p, .article a{
+    text-align: justify;
 
-
-    flex-direction: column;
-    gap:1rem;
-}
-
-.title{
-    padding-left: 1rem;
-}
-
-.subtitle{
-    color:var(--secondary-text-color);
-}
-
-.paragraph{
-    padding-left: 1rem;
 }
 
 .footer{
     display: flex;
+    flex-wrap: wrap;
     width:70%;
     min-width: 175px;
-    padding: 1rem;
+    gap:.5rem;
+
     justify-content: space-between;
 }
 
-.morePosts{
-    padding: 1rem;
-}
 
 .author{
     font-style: italic;
-    font-weight: 500;
+    font-weight: 300;
 }
 
 .date{
