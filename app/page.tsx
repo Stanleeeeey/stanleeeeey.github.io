@@ -27,7 +27,7 @@ export const metadata = {
 
 export default function Home() {
 
-    files = fs.readdirSync('public/posts');
+    files = fs.readdirSync('public/posts').reverse();
     const posts = files.map((fileName) => {
         const slug = fileName.replace('.md', '');
         const readFile = fs.readFileSync(`public/posts/${fileName}`, 'utf-8');

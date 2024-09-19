@@ -14,7 +14,7 @@ function getRandomInt(min, max) {
 
 function setup_main(){
 
-    set_color_mode();
+    //set_color_mode();
     try{
         initialize_dots();
         set_canvas();
@@ -28,7 +28,7 @@ function setup_main(){
 
 function set_color_mode(){
     let decodedCookie = decodeURIComponent(document.cookie);
-
+    
     if(decodedCookie.split("=")[1] === "retro"){
         RetroMode()
     }else{
@@ -90,7 +90,7 @@ function RetroMode(){
     color_scheme = "retro";
     dot_color = retro_dot_color;
 
-    //setCookie("mode", "retro", 90);
+    setCookie("mode", "retro", 90);
     draw_dots()
 }
 
@@ -99,7 +99,7 @@ function DarkMode(){
     dot_color = dark_dot_color;
     console.log("dark-mode")
 
-    //setCookie("mode", "dark", 90);
+    setCookie("mode", "dark", 90);
     draw_dots()
 }
 
@@ -135,7 +135,7 @@ function update_blog(){
         elemRect = element.getBoundingClientRect(),
         offset   = elemRect.top - bodyRect.top;
         
-        console.log(elemRect.top / window.innerHeight)
+
         //element.style.transform = `scale(${(window.innerHeight - elemRect.top) / (window.innerHeight) * 100}%)`;
         
     })
