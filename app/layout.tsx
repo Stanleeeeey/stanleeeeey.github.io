@@ -51,7 +51,7 @@ export default function RootLayout({
                 <a href="https://github.com/Stanleeeeey">
                   <i className={`bi bi-github ${styles.linkIcon}`}></i>
                 </a>
-                <a href="mailto:dskybus@gmail.com">
+                <a href="mailto:stanislaw2006@icloud.com">
                   <i className={`bi bi-envelope ${styles.linkIcon}`}></i>
                 </a>
                 <a href="https://www.linkedin.com/in/stanis%C5%82aw-kawulok-176466308/">

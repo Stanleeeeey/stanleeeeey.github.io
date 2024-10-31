@@ -10,7 +10,7 @@ import Script from 'next/script'
 export const metadata = {
     title:"Stanleeeeey portfolio",
     description:"Portfolio by Stanisław Kawulok.  ",
-    keywords:['Stanisław', "Kawulok", "Portfolio", "Stanleeeeey", "Stanislaw"],
+    keywords:['Stanisław', "Kawulok", "Portfolio", "Stanleeeeey", "Stanislaw", 'st@n!ey'],
     authors:[{name:"Stanisław Kawulok"}],
     creator:"Stanisław Kawulok",
     siteName:"Stanleeeeey portfolio",
@@ -55,7 +55,7 @@ export default function Home() {
         <div className={styles.greetingWrap}>
             <h2 id = "greeting" >{greeting}</h2>
             <h1 className={styles.title}>Stanisław Kawulok</h1>
-            <h2 className = {styles.nickname}>or Stanleeeeey</h2>
+            <h2 className = {styles.nickname}>known as Stanleeeeey or St@n!ey</h2>
 
             <div className={styles.additionalInfo}>
                <p>and I love coding, board gaming, reading, maths, and listening to good music</p>
@@ -120,6 +120,7 @@ export default function Home() {
                     <a key = {slug} href = {`/article/${slug}`} className={styles.post}>
                         <div className={styles.postInfo}>
                             <h3>{frontmatter.title}</h3>
+                            
                             <p>{frontmatter.date}</p>
                         </div>
                         <p>{frontmatter.subtitle}</p>
