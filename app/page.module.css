@@ -15,7 +15,7 @@
 }
 
 .greetingWrap h2{
-  font-size: 150%;
+  font-size: 120%;
   font-weight: 300;
   color: var(--secondary-text-color);
 }
@@ -27,10 +27,11 @@
   position: absolute;
   right: 0px;
   bottom: 0px;
-  font-size: 150%;
+  font-size: 120%;
   text-align: justify;
   width:20vw;
-  min-width: min-content;
+  min-width: 200px;
+
   font-weight: 300;
   
   padding: 1rem;
@@ -231,6 +232,7 @@
 
   box-sizing: border-box;
   width: 100%;
+  
   margin-top:2rem;
   position: relative;
   
@@ -247,13 +249,13 @@
 
 .postWrap{
   height: calc(100vh - var(--external-padding) - 7rem);
-
+  
   top:0;
 
   overflow: scroll;
   
   width:50vw;
-  min-width: 150px;
+  min-width: 200px;
   padding: 1rem;
   display: flex;
   justify-content: start;
@@ -261,8 +263,11 @@
   gap:1rem;
   
   border: 1px solid var(--border-color);
+  background-color: var(--background-color);
 
 }
+
+
 
 .postWrap::-webkit-scrollbar{
   display: none;
@@ -278,17 +283,13 @@
   display: flex;
   flex-direction: column;   
   gap:.5rem; 
-  width: max(calc(50vw - 1rem - 0px), calc(150px - 1rem - 0px));
+  width: max(calc(50vw - 1rem - 0px), calc(200px - 1rem - 0px));
   border: 1px solid var(--border-color);
   transition: var(--transition-out);
   background-color: var(--background-color);
   z-index: 10;
   
 }
-
-
-
-
 
 
 .post:hover{
@@ -309,7 +310,7 @@
   border-bottom: 1px solid var(--border-color);
 }
 
-.postInfo p{
+.post p{
   color: var(--secondary-text-color);
 
 }
