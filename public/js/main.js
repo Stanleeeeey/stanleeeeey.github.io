@@ -22,6 +22,12 @@ function setup_main(){
     }catch{
         console.log("no canvas to draw")
     }
+
+    try{
+        greetings()
+    }catch{
+        console.log("failed to update greeting")
+    }
 }
 
 
@@ -43,7 +49,7 @@ function set_canvas(){
 
     canvas.width  = window.innerWidth;
     canvas.height = window.innerHeight;
-    console.log(canvas.width, canvas.height);
+
     ctx.clearRect(0, 0, canvas.width, canvas.height);
 }
 
@@ -141,6 +147,16 @@ function update_blog(){
     })
 }
 
+function greetings(){
+    const now = new Date();
+    const hours = now.getHours();
+    let greeting = "Hi I'm";
+    if(hours <= 12){greeting ="Good morning! I'm"}
+    else if(hours <= 18){greeting = "Good afternoon! I'm"}
+    else {greeting = "Good evning! I'm"}
+
+    document.getElementById("greeting").innerText = greeting;
+}
 
 
 window.addEventListener('mousemove', (event) => {

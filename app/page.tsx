@@ -39,12 +39,7 @@ export default function Home() {
         };
     });
 
-    const now = new Date();
-    const hours = now.getHours();
-    let greeting = "Hi I'm";
-    if(hours <= 12){greeting ="Good morning! I'm"}
-    else if(hours <= 18){greeting = "Good afternoon! I'm"}
-    else {greeting = "Good evning! I'm"}
+
     
     var files = fs.readdirSync(`public/posts`);
 
@@ -53,7 +48,7 @@ export default function Home() {
         <Script src="../js/main.js"></Script>
      <section className={styles.landingPage} id ="landing-page">
         <div className={styles.greetingWrap}>
-            <h2 id = "greeting" >{greeting}</h2>
+            <h2 id = "greeting" >hi</h2>
             <h1 className={styles.title}>Stanisław Kawulok</h1>
             <h2 className = {styles.nickname}>known as Stanleeeeey or St@n!ey</h2>
 

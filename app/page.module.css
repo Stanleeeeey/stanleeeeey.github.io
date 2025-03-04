@@ -112,6 +112,7 @@
   color: var(--primary-text-color);
   border: 1px solid var(--border-color);
   transition: var(--transition-in);
+
   
 }
 
@@ -136,7 +137,6 @@
 .project:hover h1{
   color:var(--primary-text-color)/* #f55b1d*/;
   
-  /*border-bottom: 1px solid white;*/
 }
 
 .project:hover a{
@@ -159,7 +159,7 @@
 }
 
 .left{
-  align-self: start;
+  align-self: flex-start;
 }
 
 .left:hover{
@@ -258,7 +258,7 @@
   min-width: 200px;
   padding: 1rem;
   display: flex;
-  justify-content: start;
+  justify-content: flex-start;
   flex-direction: column;
   gap:1rem;
   
