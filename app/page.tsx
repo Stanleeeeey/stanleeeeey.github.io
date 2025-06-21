@@ -88,15 +88,16 @@ export default function Home() {
                     <p >JS</p>
                 </div>
             </a>
-            <a className={`${styles.project} ${styles.left}`} href="hangman/hangman.html">
+            <a className={`${styles.project} ${styles.left}`} href="https://github.com/Stanleeeeey/stanleeeeey.github.io">
                 <div className={styles.topWrap}>
-                    <h1>Hangman Game</h1>
-                    <p>Play hangman online (computer only)</p>
+                    <h1>Source code of the website</h1>
+                    <p>check out how was this website build!</p>
                 </div>
                 <div className={styles.techsWrap}>
                     <p >HTML</p>
                     <p >CSS</p>
                     <p >JS</p>
+                    <p >NEXTJS</p>
                 </div>    
             </a>
         </div>
