@@ -91,7 +91,7 @@ export default function Home() {
             <a className={`${styles.project} ${styles.left}`} href="https://github.com/Stanleeeeey/stanleeeeey.github.io">
                 <div className={styles.topWrap}>
                     <h1>Source code of the website</h1>
-                    <p>check out how was this website build!</p>
+                    <p>check out how was this website built!</p>
                 </div>
                 <div className={styles.techsWrap}>
                     <p >HTML</p>
