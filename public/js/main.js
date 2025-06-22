@@ -153,7 +153,7 @@ function greetings(){
     let greeting = "Hi I'm";
     if(hours <= 12){greeting ="Good morning! I'm"}
     else if(hours <= 18){greeting = "Good afternoon! I'm"}
-    else {greeting = "Good evning! I'm"}
+    else {greeting = "Good evening! I'm"}
 
     document.getElementById("greeting").innerText = greeting;
 }

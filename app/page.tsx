@@ -79,7 +79,7 @@ export default function Home() {
             <a className={`${styles.project} ${styles.right}`} href='https://github.com/Stanleeeeey/quotes'>
                 <div className={styles.topWrap}>
                     <h1>Quotes</h1>
-                    <p>code for website with qoutes</p>
+                    <p>code for website with quotes</p>
                 </div>
                 <div className={styles.techsWrap}>
                     <p>python</p>
