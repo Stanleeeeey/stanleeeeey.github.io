@@ -1,7 +1,7 @@
 const speed = 0.8;
 let dots = [];
 let retro_dot_color = "rgb(252, 8, 16)"
-let dark_dot_color = "rgb(150, 150, 150)"
+let dark_dot_color = "rgb(106, 102, 150)"
 
 let color_scheme = "dark";
 let dot_color = dark_dot_color;
